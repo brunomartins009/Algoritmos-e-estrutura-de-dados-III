@@ -1,0 +1,30 @@
+função mochila_gulosa(W, wt, val, n):
+    valor_peso = vetor de pares de doubles e inteiros
+    para i de 0 até n-1 faça:
+        adicione o par (val[i]/wt[i], i) ao vetor valor_peso
+    ordene o vetor valor_peso em ordem decrescente de valores (usando a função cmp definida)
+
+    peso_atual = 0
+    valor_atual = 0
+    para i de 0 até n-1 faça:
+        se peso_atual + wt[valor_peso[i].segundo] <= W então:
+            peso_atual += wt[valor_peso[i].segundo]
+            valor_atual += val[valor_peso[i].segundo]
+    
+    retorne valor_atual
+
+
+função cmp(a, b):
+    retorne a.primeiro > b.primeiro
+
+
+função principal():
+    arquivo = abra o arquivo "knapPI_3_10000_1000_1"
+    leia n e W do arquivo
+    crie os arrays val[n] e wt[n]
+    para i de 0 até n-1 faça:
+        leia val[i] e wt[i] do arquivo
+    
+    feche o arquivo
+
+    imprima mochila_gulosa(W, wt, val, n)

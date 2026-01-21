@@ -1,0 +1,5 @@
+1 - Ler o arquivo para contar o numero de linhas
+2 - Ler novamente e armazenar em uma matriz alocada dinamicamente
+3 - Calcular o peso das arestas (grafo completo)
+4 - Criar a matriz de adjacencias
+5 - Criar a lista de adjacencias
